@@ -1,5 +1,5 @@
 {% set name = "arch" %}
-{% set version = "4.11" %}
+{% set version = "4.13" %}
 
 package:
   name: arch-py
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a3d5cd9086e7c44638286fbe46a4688a3668ab79400a1712c3ce43490be0c3bb
+  sha256: 062b8541ee4043410db1e3fce9720e414505edff3d49a784179957726cd7b25d
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
     - cython >=0.29
     - numpy >=1.14
     - pandas >=0.22
+    - property-cached >=1.6.3
     - scipy >=1.0
     - statsmodels >=0.9
 
