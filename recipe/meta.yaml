@@ -10,7 +10,7 @@ source:
   sha256: 327d0b59261f47f7ebea35baf707338a5ac0e8cc6611d7033b0a66b4bae748ba
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt"
   skip: True  # [py<36]
 
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - DanielBok
+    - bashtage
